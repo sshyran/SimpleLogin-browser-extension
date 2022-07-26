@@ -1,5 +1,5 @@
 {
-  "name": "SimpleLogin:Receive & Send emails anonymously",
+  "name": "SimpleLogin without SL icon",
   "short_name": "SimpleLogin",
   "description": "Easily create a different email for each website to hide your real email. Protect your inbox against spams, phishing, data breaches",
   "version": null,
@@ -15,9 +15,7 @@
     "activeTab",
     "storage",
     "contextMenus",
-    "https://*.simplelogin.io/*",
-    "http://*/*",
-    "https://*/*"
+    "https://*.simplelogin.io/*"
   ],
   "browser_action": {
     "default_title": "simplelogin-extension",
