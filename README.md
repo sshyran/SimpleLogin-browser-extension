@@ -33,6 +33,17 @@ You can directly install the extension by visiting the store page for your brows
 
 You can find more information about how the extension works and which parts it has in [DEVELOPMENT.md](./DEVELOPMENT.md)
 
+## How to build the extension locally
+
+In order to build the extension yourself, run
+
+```bash
+npm install && npm run build && npm run build-zip
+```
+
+You will find the extension in the `dist-zip/` directory.
+
+
 ## Contributing Guide
 
 All work on SimpleLogin Chrome/Firefox extension happens directly on GitHub.
@@ -63,16 +74,10 @@ npm run prettier:write
 5. Upload the extension to the Chrome, Firefox and Edge stores.
 
 
-## How to build the extension locally
 
-In order to build the extension yourself, please follow these steps:
+## Beta build
 
-- Make sure you have the dependencies installed and up-to-date with `npm install`.
-- Run the build process with `npm run build`.
-- Create the zip package with `npm run build-zip`. You will find the extension in the `dist-zip/` directory.
-- If you want to use it on Firefox you will need to enter the `dist/` directory and run `web-ext build`. You will find the extension in the `dist/web-ext-artifacts/` directory.  
-
-- (Optional, only useful for beta build) Build beta version: change `betaRev` in `package.json`, then generate zip file using
+If you need to build a beta version: change `betaRev` in `package.json`, then generate zip file using
 
 ```bash
 npm run build:beta && npm run build-zip
